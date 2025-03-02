@@ -11,5 +11,11 @@ deliveryLogsRoutes.post(
     ensureAuthenticate,
     verifyUserAuthorization(["sale"]),
     deliveryLogsConstroller.create)
+deliveryLogsRoutes.get(
+    "/:delivery_id/show",
+    ensureAuthenticate,
+    verifyUserAuthorization(["sale", "customer"]),
+    deliveryLogsConstroller.show
+)
 
     export { deliveryLogsRoutes}
