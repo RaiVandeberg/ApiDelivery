@@ -91,11 +91,4 @@ npm run test:dev
 └── tsconfig.json        # Configuração do TypeScript
 ```
 
-## 📌 Próximos Passos
-
--
-
----
-
-💡 **Dúvidas ou sugestões?** Fique à vontade para contribuir ou entrar em contato! 😃
 
