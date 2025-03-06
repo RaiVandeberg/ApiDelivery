@@ -2,10 +2,14 @@
   "name": "apidelivery",
   "version": "1.0.0",
   "main": "index.js",
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
     "dev": "tsx watch --env-file .env src/server.ts",
     "test:dev": "set NODE_OPTIONS=--experimental-vm-modules && npx jest --watchAll --runInBand",
-    "build": "tsup src"
+    "build": "tsup src --out-dir build",
+    "start": "node build/server.js"
   },
   "author": "Raí",
   "license": "ISC",
