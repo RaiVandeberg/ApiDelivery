@@ -4,7 +4,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "tsx watch --env-file .env src/server.ts",
-    "test:dev": "set NODE_OPTIONS=--experimental-vm-modules && npx jest --watchAll --runInBand"
+    "test:dev": "set NODE_OPTIONS=--experimental-vm-modules && npx jest --watchAll --runInBand",
+    "build": "tsup src"
   },
   "author": "Raí",
   "license": "ISC",
@@ -30,6 +31,7 @@
     "supertest": "^7.0.0",
     "ts-jest": "^29.2.5",
     "ts-node": "^10.9.2",
+    "tsup": "^8.3.0",
     "tsx": "^4.16.2",
     "typescript": "^5.5.4"
   }
